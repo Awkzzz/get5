@@ -273,7 +273,7 @@ public void OnPluginStart() {
       CreateConVar("get5_event_log_format", "",
                    "Path to use when writing match event logs, use \"\" to disable");
   g_FixedPauseTimeCvar =
-      CreateConVar("get5_fixed_pause_time", "0",
+      CreateConVar("get5_fixed_pause_time", "30",
                    "If set to non-zero, this will be the fixed length of any pause");
   g_KickClientImmunity = CreateConVar(
       "get5_kick_immunity", "1",
@@ -290,14 +290,14 @@ public void OnPluginStart() {
       CreateConVar("get5_max_backup_age", "160000",
                    "Number of seconds before a backup file is automatically deleted, 0 to disable");
   g_MaxPausesCvar =
-      CreateConVar("get5_max_pauses", "0", "Maximum number of pauses a team can use, 0=unlimited");
+      CreateConVar("get5_max_pauses", "4", "Maximum number of pauses a team can use, 0=unlimited");
   g_MaxPauseTimeCvar =
       CreateConVar("get5_max_pause_time", "300",
                    "Maximum number of time the game can spend paused by a team, 0=unlimited");
   g_MessagePrefixCvar =
       CreateConVar("get5_message_prefix", DEFAULT_TAG, "The tag applied before plugin messages.");
   g_ResetPausesEachHalfCvar =
-      CreateConVar("get5_reset_pauses_each_half", "1",
+      CreateConVar("get5_reset_pauses_each_half", "0",
                    "Whether pause limits will be reset each halftime period");
   g_PausingEnabledCvar = CreateConVar("get5_pausing_enabled", "1", "Whether pausing is allowed.");
   g_PrettyPrintJsonCvar = CreateConVar("get5_pretty_print_json", "1",
